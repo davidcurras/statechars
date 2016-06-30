@@ -1,0 +1,92 @@
+#canvas {
+  position: relative;
+  width: 94%;
+  height: 400px;
+  margin: 50px 3%;
+  overflow: hidden;
+}
+
+#game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10000px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  /* Agregmos una imagen de fondo al game */
+  background: transparent url('../img/full-bg.png') repeat-x 0 0;
+  background-size: 800px 400px;
+}
+
+#score {
+  display: none;
+  position: fixed;
+  width: auto;
+  height: auto;
+  left: 75%;
+  top: 60px;
+  border: 1px solid #999;
+  border-radius: 2px;
+  background-color: #aaa;
+  color: #000;
+  text-align: left;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+#dialog {
+  display: none;
+  position: fixed;
+  padding: 5px;
+  width: auto;
+  max-width: 55%;
+  height: 70px;
+  left: 10%;
+  top: 60px;
+  border: 1px solid #999;
+  border-radius: 2px;
+  background-color: #eee;
+  color: #000;
+  text-align: center;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+#dialog button {
+  margin: 5px;
+}
+
+#player {
+  position: absolute;
+  width: 60px;
+  height: 35px;
+  left: 50px;
+  bottom: 60px;
+  /* Agregmos una imagen al jugadore */
+  background: transparent url('../img/fly-cat.png') no-repeat center center;
+  background-size: 60px 35px;
+}
+
+#obstacle1, #obstacle2, #obstacle3 {
+  position: absolute;
+  width: 61px;
+  height: 59px;
+  bottom: 54px;
+  /* Agregmos una imagen al jugadore */
+  background: transparent url('../img/tree.png') no-repeat center center; 
+  background-size: 61px 59px;
+}
+
+#obstacle1 {
+  left: 300px;
+}
+
+#obstacle2 {
+  left: 1000px;
+}
+
+#obstacle3 {
+  left: 700px;
+}
+
